@@ -1,6 +1,6 @@
 {
   "name": "ruptela",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Communication protocol between Ruptela's GPS tracking devices and TCP server in Node.js.",
   "keywords": [
     "communication",
