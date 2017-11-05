@@ -1,13 +1,9 @@
 'use strict';
 
-const expect = require('chai').expect;
-const Segment = require('../lib/segment'),
+const expect = require('chai').expect,
+        Segment = require('../lib/segment'),
         Command = require('../lib/command'),
-        Commander = require('../lib/commander'),
-        Command_1 = require('../lib/command/command_1'),
-        Command_68 = require('../lib/command/command_68'),
-        Payload_1 = require('../lib/payload/command_1'),
-        Payload_68 = require('../lib/payload/command_68');
+        Commander = require('../lib/commander');
 
 describe('Commander', () => {
     let commander_1, commander_68;
@@ -30,12 +26,6 @@ describe('Commander', () => {
     it('expect property command to be an instance of Command', () => {
         expect(commander_1.command).to.be.an.instanceof(Command);
         expect(commander_68.command).to.be.an.instanceof(Command);
-    });
-    it('expect command setter to handle valid commands', () => {
-        expect(() => commander_1.command = new Command_1(new Payload_1()))
-                .to.not.throw(Error);
-        expect(() => commander_68.command = new Command_68(new Payload_68()))
-                .to.not.throw(Error);
     });
     it('expect command setter to handle invalid commands', () => {
         expect(() => commander_1.command = new Segment())

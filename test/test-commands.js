@@ -1,7 +1,7 @@
 'use strict';
 
-const expect = require('chai').expect;
-const commands = require('../lib/commands');
+const expect = require('chai').expect,
+        commands = require('../lib/commands');
 
 describe('Commands', () => {
     it('expect to be an array', () => {

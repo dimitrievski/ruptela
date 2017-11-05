@@ -1,7 +1,6 @@
 'use strict';
 
-const expect = require('chai').expect;
-const Segment = require('../lib/segment'),
+const expect = require('chai').expect,
         Record = require('../lib/record'),
         RecordExtended = require('../lib/record_extended');
 

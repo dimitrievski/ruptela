@@ -1,6 +1,6 @@
 'use strict';
-const expect = require('chai').expect;
-const process = require('../lib/index');
+const expect = require('chai').expect,
+        process = require('../lib/index');
 
 describe('Index', () => {
     let packet_len, imei, cmd, rec_left, rec_total;

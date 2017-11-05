@@ -1,6 +1,6 @@
 'use strict';
-const expect = require('chai').expect;
-const Iterator = require('../lib/iterator');
+const expect = require('chai').expect,
+        Iterator = require('../lib/iterator');
 
 describe('Iterator', () => {
     let buf, bufIt;
